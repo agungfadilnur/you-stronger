@@ -6,14 +6,19 @@ const songs = [
         url: 'http://n03.radiojar.com/4ywdgup3bnzuv'
     },
     {
-        title: 'Lagu Kedua',
-        artist: 'Cerita Kita',
-        url: 'https://drive.google.com/uc?export=download&id=1-77-QFy9IzjMnVvjasz5OSlxmyj9jccL'
+        title: 'Samson',
+        artist: 'Kisah Tak Sempurna',
+        url: 'https://raw.githubusercontent.com/agungfadilnur/you-stronger/main/asset/music/SAMSONS - Kisah Tak Sempurna.mp3'
     },
     {
-        title: 'Lagu Ketiga',
-        artist: 'Cinta Selamanya',
-        url: 'GANTI_DENGAN_LINK_GOOGLE_DRIVE_LAGU_3'
+        title: 'Selalu ada di Nadimu',
+        artist: 'BCL',
+        url: 'https://raw.githubusercontent.com/agungfadilnur/you-stronger/main/asset/music/BCL - Selalu Ada di Nadimu .mp3'
+    },
+    {
+        title: 'Ratu',
+        artist: 'Dear Diary',
+        url: 'https://raw.githubusercontent.com/agungfadilnur/you-stronger/main/asset/music/RATU - Dear Diary.mp3'
     }
 ];
 
@@ -178,7 +183,7 @@ const startGameBtn = document.getElementById('startGameBtn');
 const gameContainer = document.getElementById('gameContainer');
 const gameMessage = document.getElementById('gameMessage');
 
-const balloonEmojis = ['❤️', '💕', '💖', '💗', '💝', '🎀'];
+const balloonEmojis = ['❤️', '💕', '💖', '💦🍆', '💝', '🎀'];
 
 function startGame() {
     gameActive = true;
@@ -317,7 +322,7 @@ function endGame(createBalloonInterval) {
     // Show result message
     let message = '';
     if (score >= 30) {
-        message = `🎉 WOW! Luar biasa sekali! ${score} balon pecah! Cinta mu sangat eksplosif! 💥💕`;
+        message = `🎉 WOW! Luar biasa sekali! ${score} balon pecah! Mak Croootttt AHHH 💦🍆 🤰`;
     } else if (score >= 20) {
         message = `😍 Bagus banget! ${score} balon pecah! Cinta mu begitu kuat! 💪❤️`;
     } else if (score >= 10) {
