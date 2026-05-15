@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenangan Kita ♥️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background -->
+    <div class="background">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header dengan Date Counter -->
+        <header class="header">
+            <h1>✨ Kenangan Spesial Kita ✨</h1>
+            <p class="date-info">16 Mei 2021 - Hari Istimewa</p>
+            <div class="date-counter">
+                <p id="counter">Loading...</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Romantic Message -->
+            <section class="message-section">
+                <div class="message-box">
+                    <p class="main-message">
+                        "Pada hari ini, 16 Mei 2021, kamu menceritakan isi hatimu. 
+                        Setiap kata adalah kenangan yang indah dan berharga bagiku. 
+                        Terima kasih telah berbagi cerita terdalam dengan ku 💝"
+                    </p>
+                </div>
+            </section>
+
+            <!-- Memory Gallery -->
+            <section class="gallery-section">
+                <h2>📸 Bukti Kenangan Kita</h2>
+                <div class="gallery-container">
+                    <div class="memory-card" id="memory1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <span class="card-number">💭</span>
+                                <p>Klik untuk buka kenangan</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://via.placeholder.com/300x300?text=Kenangan+1" alt="Kenangan">
+                                <p class="memory-caption">Momen spesial hari itu</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="memory-card" id="memory2">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <span class="card-number">❤️</span>
+                                <p>Klik untuk buka kenangan</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://via.placeholder.com/300x300?text=Kenangan+2" alt="Kenangan">
+                                <p class="memory-caption">Saat kamu bercerita</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="memory-card" id="memory3">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <span class="card-number">💕</span>
+                                <p>Klik untuk buka kenangan</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://via.placeholder.com/300x300?text=Kenangan+3" alt="Kenangan">
+                                <p class="memory-caption">Hari yang tak terlupakan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Music Section -->
+            <section class="music-section">
+                <h2>🎵 Playlist Kenangan Cinta</h2>
+                <p class="music-intro">Lagu-lagu yang menemani kenangan spesial kita</p>
+                
+                <div class="music-container">
+                    <div class="music-card" data-song="0">
+                        <div class="song-cover">🎶</div>
+                        <div class="song-info">
+                            <p class="song-title">Radio Terbaik</p>
+                            <p class="song-artist">Untuk Mu</p>
+                        </div>
+                        <button class="btn-play" onclick="playSong(0)">▶ Putar</button>
+                    </div>
+
+                    <div class="music-card" data-song="1">
+                        <div class="song-cover">🎵</div>
+                        <div class="song-info">
+                            <p class="song-title">Lagu Kedua</p>
+                            <p class="song-artist">Cerita Kita</p>
+                        </div>
+                        <button class="btn-play" onclick="playSong(1)">▶ Putar</button>
+                    </div>
+
+                    <div class="music-card" data-song="2">
+                        <div class="song-cover">💿</div>
+                        <div class="song-info">
+                            <p class="song-title">Lagu Semangat</p>
+                            <p class="song-artist">Terus berjalan</p>
+                        </div>
+                        <button class="btn-play" onclick="playSong(2)">▶ Putar</button>
+                    </div>
+                </div>
+
+                <!-- Music Player -->
+                <div class="music-player" id="musicPlayer">
+                    <div class="player-info">
+                        <p class="current-song-title">Pilih lagu untuk mendengarkan</p>
+                        <p class="current-song-artist">-</p>
+                    </div>
+                    <audio id="audioPlayer" style="display: none;"></audio>
+                    <div class="player-controls">
+                        <button id="playPauseBtn" class="btn-control">▶</button>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="time-display">0:00 / 0:00</span>
+                    </div>
+                    <div class="volume-control">
+                        <span>🔊</span>
+                        <input type="range" id="volumeSlider" min="0" max="100" value="70">
+                        <span id="volumePercent">70%</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Game Section -->
+            <section class="game-section">
+                <h2>🎮 Mainkan Game Pecah Balon Cinta!</h2>
+                <p class="game-instruction">Pecahkan balon-balon yang terbang dengan klik! Setiap balon yang pecah = 1 sapaan cinta 💕</p>
+                
+                <button class="btn-start-game" id="startGameBtn">Mulai Permainan</button>
+                
+                <div class="game-container" id="gameContainer" style="display: none;">
+                    <div class="game-stats">
+                        <p>Balon Pecah: <span id="score">0</span></p>
+                        <p>Waktu: <span id="timer">30</span>s</p>
+                    </div>
+                    <div class="game-area" id="gameArea"></div>
+                </div>
+
+                <div class="game-message" id="gameMessage"></div>
+            </section>
+
+            <!-- Final Message -->
+            <section class="final-section">
+                <div class="final-message">
+                    <h2>💫 Untuk Dirimu 💫</h2>
+                    <p>Terima kasih telah mempercayai aku dengan isi hatimu.</p>
+                    <p>Setiap kenangan dengan mu adalah hadiah terbaik.</p>
+                    <p class="love-text">I Love You ♥️</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with 💕 | Surprise untuk orang yang kusayangi</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
