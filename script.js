@@ -20,6 +20,12 @@ const songs = [
         artist: 'Dear Diary',
         url: 'https://raw.githubusercontent.com/agungfadilnur/you-stronger/main/asset/music/RATU - Dear Diary.mp3'
     }
+    ,
+    {
+        title: 'Lihat Kebunku',
+        artist: 'Agung - Cover Jeje',
+        url: 'https://raw.githubusercontent.com/agungfadilnur/you-stronger/main/asset/music/Ikhlas.mp3'
+    }
 ];
 
 let currentSongIndex = -1;
