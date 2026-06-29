@@ -29,6 +29,11 @@ const songs = [
         title: 'Dua Sedjoli',
         artist: 'Agung - Cover Lipsing Dewa 19',
         url: 'https://raw.githubusercontent.com/agungfadilnur/you-stronger/main/asset/music/dua-sedjoli.mp3'
+    },
+    {
+        title: 'Cintailah Cinta',
+        artist: 'Agung - Cover Lipsing Dewa 19',
+        url: 'https://raw.githubusercontent.com/agungfadilnur/you-stronger/main/asset/music/Cintailah Cinta.mp3'
     }
 ];
 
