@@ -19,12 +19,16 @@ const songs = [
         title: 'Ratu',
         artist: 'Dear Diary',
         url: 'https://raw.githubusercontent.com/agungfadilnur/you-stronger/main/asset/music/RATU - Dear Diary.mp3'
-    }
-    ,
+    },
     {
         title: 'Lihat Kebunku',
         artist: 'Agung - Cover Jeje',
         url: 'https://raw.githubusercontent.com/agungfadilnur/you-stronger/main/asset/music/Ikhlas.mp3'
+    },
+    {
+        title: 'Dua Sedjoli',
+        artist: 'Agung - Cover Lipsing Dewa 19',
+        url: 'https://raw.githubusercontent.com/agungfadilnur/you-stronger/main/asset/music/dua-sedjoli.mp3'
     }
 ];
 
